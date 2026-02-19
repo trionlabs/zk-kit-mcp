@@ -1,0 +1,53 @@
+{
+  "name": "zk-kit-mcp",
+  "version": "0.2.0",
+  "description": "MCP server for ZK-Kit, zero-knowledge toolkit access via live GitHub discovery",
+  "type": "module",
+  "bin": {
+    "zk-kit-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "clean": "rm -rf build",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check src/ tests/",
+    "lint:fix": "biome check --fix src/ tests/"
+  },
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zk-kit/zk-kit-mcp"
+  },
+  "homepage": "https://zkkit.org",
+  "bugs": {
+    "url": "https://github.com/zk-kit/zk-kit-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "zk-kit",
+    "zero-knowledge",
+    "ethereum"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.2",
+    "@types/node": "^22",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7",
+    "vitest": "^4.0.18"
+  }
+}
