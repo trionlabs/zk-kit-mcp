@@ -1,8 +1,7 @@
 # zk-kit-mcp
 
-[![npm version](https://img.shields.io/npm/v/zk-kit-mcp)](https://www.npmjs.com/package/zk-kit-mcp)
-[![license](https://img.shields.io/npm/l/zk-kit-mcp)](LICENSE)
-[![node](https://img.shields.io/node/v/zk-kit-mcp)](https://nodejs.org)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
 
 MCP server for [ZK-Kit](https://zkkit.org), zero-knowledge toolkit by PSE at the Ethereum Foundation.
 Gives LLMs structured access to ~30 packages across TypeScript, Circom, Solidity, Noir, and Rust.
