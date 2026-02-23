@@ -1,11 +1,12 @@
 {
   "name": "zk-kit-mcp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "MCP server for ZK-Kit, zero-knowledge toolkit access via live GitHub discovery",
   "type": "module",
   "bin": {
     "zk-kit-mcp": "./build/index.js"
   },
+  "main": "build/index.js",
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
     "clean": "rm -rf build",
@@ -18,8 +19,14 @@
     "lint:fix": "biome check --fix src/ tests/"
   },
   "files": [
-    "build"
+    "build",
+    "package.json",
+    "README.md",
+    "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20"
   },

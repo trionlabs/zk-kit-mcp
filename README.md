@@ -1,6 +1,7 @@
 # zk-kit-mcp
 
 [![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![npm](https://img.shields.io/npm/v/zk-kit-mcp)](https://www.npmjs.com/package/zk-kit-mcp)
 [![node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)](https://nodejs.org)
 
 MCP server for [ZK-Kit](https://zkkit.org), zero-knowledge toolkit by PSE at the Ethereum Foundation.
