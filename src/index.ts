@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { readFileSync } from "node:fs";
+import { readFileSync, realpathSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { completable } from "@modelcontextprotocol/sdk/server/completable.js";
@@ -1354,7 +1354,9 @@ async function main(): Promise<void> {
   logger.info("server", "Connected via STDIO");
 }
 
-const isEntryPoint = resolve(process.argv[1] ?? "") === fileURLToPath(import.meta.url);
+const scriptPath = resolve(realpathSync(process.argv[1] ?? ""));
+const modulePath = fileURLToPath(import.meta.url);
+const isEntryPoint = scriptPath === modulePath;
 if (isEntryPoint) {
   main().catch((err) => {
     logger.error("server", "Fatal error", { error: String(err) });
