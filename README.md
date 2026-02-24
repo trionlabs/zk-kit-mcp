@@ -71,7 +71,7 @@ npm install -g zk-kit-mcp
 ### From source
 
 ```bash
-git clone https://github.com/zk-kit/zk-kit-mcp.git
+git clone https://github.com/trionlabs/zk-kit-mcp.git
 cd zk-kit-mcp
 npm install
 npm run build

@@ -32,11 +32,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zk-kit/zk-kit-mcp"
+    "url": "https://github.com/trionlabs/zk-kit-mcp"
   },
   "homepage": "https://zkkit.org",
   "bugs": {
-    "url": "https://github.com/zk-kit/zk-kit-mcp/issues"
+    "url": "https://github.com/trionlabs/zk-kit-mcp/issues"
   },
   "keywords": [
     "mcp",
